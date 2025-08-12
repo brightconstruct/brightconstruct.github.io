@@ -244,7 +244,38 @@ nav ul li a:hover {
 .addon-actions {
     margin-top: auto;
     display: flex;
+    flex-direction: column;
     gap: 0.8rem;
+}
+
+.addon-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.addon-legal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75em;
+}
+
+.legal-link {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.legal-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.separator {
+    color: var(--text-light);
+    font-size: 0.8em;
 }
 
 /* Features section */
