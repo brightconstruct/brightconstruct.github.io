@@ -50,14 +50,14 @@
             <div class="addon-details-grid">
                 <div class="addon-description">
                     <h2>About Form Prefiller</h2>
-                    <p>Form Prefiller simplifies data entry by automatically pre-filling Google Forms with personalized details from Google Sheets, reducing errors, saving time, and ensuring accuracy by leveraging already available data.</p>
+                    <p>Form Prefiller simplifies data entry by automatically pre-filling Google Forms with personalized details from CSV, reducing errors, saving time, and ensuring accuracy by leveraging already available data.</p>
 
                     <h3>Key Features</h3>
                     <ul>
-                        <li><strong>Automatic Data Pre-Fill:</strong> Prefill Google Forms with data from external sources like Google Sheets, reducing manual entry.</li>
+                        <li><strong>Automatic Data Pre-Fill:</strong> Prefill Google Forms with data from external sources like CSV, reducing manual entry.</li>
                         <li><strong>Avoid Typos and Mistakes:</strong> Automatically validate and pre-fill fields to prevent typing errors on the user/customer's side.</li>
                         <li><strong>Customizable Field Mapping:</strong> Dynamically map form fields to spreadsheet columns for personalized, efficient pre-filling.</li>
-                        <li><strong>Support for Multiple Data Sources:</strong> Easily integrate data from CSV files, Google Sheets, or manual inputs to pre-fill forms.</li>
+                        <li><strong>Support for Multiple Data Sources:</strong> Easily integrate data from CSV files, or manual inputs to pre-fill forms.</li>
                         <li><strong>Email Integration:</strong> Send pre-filled form links to users via email, simplifying workflows and reducing user input errors.</li>
                         <li><strong>Error Handling:</strong> Built-in checks for missing or incorrect data to prevent submission errors.</li>
                         <li><strong>Simple User Interface:</strong> Easy-to-use sidebar interface for mapping fields, uploading data, and generating links.</li>
@@ -79,7 +79,7 @@
                         <li><strong>Install Form Prefiller:</strong> Install the Form Prefiller add-on from the Google Workspace Marketplace.</li>
                         <li><strong>Open Your Google Form:</strong> Open the Google Form you want to pre-fill with data.</li>
                         <li><strong>Launch Form Prefiller:</strong> Click on the Form Prefiller add-on from the Google Form menu to launch the sidebar.</li>
-                        <li><strong>Map Form Fields to Data:</strong> Map the Google Form fields to your data (from Google Sheets or CSV) using the easy-to-use interface.</li>
+                        <li><strong>Map Form Fields to Data:</strong> Map the Google Form fields to your data (from CSV) using the easy-to-use interface.</li>
                         <li><strong>Preview Your Prefilled Form:</strong> Review the pre-filled form data to ensure it's accurate and complete.</li>
                         <li><strong>Send Prefilled Links or Submit:</strong> Generate pre-filled form links and send them via email or submit them directly, streamlining the process for your users.</li>
                     </ol>
@@ -99,7 +99,7 @@
                                 <img src="images/form-prefiller/interface.png" alt="Form Prefiller main interface">
                             </div>
                             <div class="screenshot-caption">
-                                <p>Main google sheet/csv selection interface</p>
+                                <p>Main csv selection interface</p>
                             </div>
                         </div>
                         
@@ -169,39 +169,26 @@
                             <li>
                                 <h3>What Information We Collect and Why</h3>
                                 <div class="section-content">
-                                    <p>Our Add-on primarily functions by interacting with your Google Forms and Google Sheets data to facilitate the pre-filling process. We collect the minimum information necessary to provide and improve the Add-on's features.</p>
+                                    <p>Our Add-on primarily functions by interacting with your Google Forms and CSV data to facilitate the pre-filling process. We collect the minimum information necessary to provide and improve the Add-on's features.</p>
 
                                     <p><strong>Information you authorize us to access (via Google OAuth):</strong></p>
 
                                     <p><strong>Your Google User ID and Email Address:</strong> This is collected to identify you as a user, manage your license (if applicable), and provide essential service communications (e.g., updates, support). This information is fundamental for the Add-on to operate within your Google Workspace environment. Specifically, your email address is also used as the "from" address when sending emails on your behalf, as initiated by you through the Add-on's features.</p>
                                     <p>Specific Scope: https://www.googleapis.com/auth/userinfo.email</p>
 
-                                    <p><strong>Google Sheets Spreadsheets (Read & Edit Access):</strong></p>
-                                    <p>Purpose: The Add-on needs to read data from your specified Google Sheets spreadsheets to retrieve the values used for pre-filling. It also needs to write/edit data to your specified Google Sheets spreadsheets if you configure the Add-on to log usage, errors, or other relevant data back to a sheet, or to append the generated prefilled URLs to a sheet.</p>
-                                    <p>Specific Scope: https://www.googleapis.com/auth/spreadsheets (See, edit, create, and delete all your Google Sheets spreadsheets).</p>
-                                    <p>Limited Use: Our access is strictly limited to the spreadsheets you explicitly select or connect with the Add-on. We do not access or process any other spreadsheets in your Google Drive unless you specifically authorize or direct the Add-on to do so.</p>
-
                                     <p><strong>Google Forms (Current Form - Read & Edit Access):</strong></p>
                                     <p>Purpose: The Add-on needs to read the structure of the Google Form it is currently running in to understand the questions and fields available for pre-filling. It also needs to create/modify form URLs or parameters to generate the pre-filled links for that specific form.</p>
                                     <p>Specific Scope: https://www.googleapis.com/auth/forms.currentonly (See, edit, create, and delete only the specific Google Form you are using with this app).</p>
                                     <p>Limited Use: Our access is strictly limited to the Google Form that is currently open and being used with the Add-on. We do not access or process any other forms in your Google Drive.</p>
 
-                                    <p><strong>Google Drive Files (Read-Only Access):</strong></p>
-                                    <p>Purpose: The Add-on may need to read metadata (like file names, types) of files in your Google Drive. This is typically used to help you select specific Google Sheets or Forms for pre-filling, or to verify file types if you provide URLs. It does not allow the Add-on to modify, create, or delete any files in your Drive.</p>
-                                    <p>Specific Scope: https://www.googleapis.com/auth/drive.readonly (See and download all your Google Drive files).</p>
-                                    <p>Limited Use: This access is used only for identifying and listing files to facilitate selection within the Add-on's interface. We do not download the content of files other than the explicitly selected Google Sheets or Forms, nor do we modify any Drive files.</p>
-
-                                    <p><strong>Gmail (Manage Drafts and Send Emails):</strong></p>
+                                
+                                    <p><strong>Gmail (Send Emails):</strong></p>
                                     <p>Purpose: If the Add-on includes a feature to send pre-filled form links via email (e.g., to respondents), it will require permission to manage drafts and send emails on your behalf. Your email address (obtained via userinfo.email scope) will be used as the "from" address for these emails.</p>
-                                    <p>Specific Scopes:</p>
-                                    <ul>
-                                        <li>https://www.googleapis.com/auth/gmail.compose (Create, read, update, and delete drafts. Send messages and drafts.)</li>
-                                        <li>https://www.googleapis.com/auth/gmail.send (Send messages only. No read or modify privileges on mailbox.)</li>
-                                    </ul>
+                                    <p>Specific Scopes: https://www.googleapis.com/auth/gmail.send (Send messages only. No read or modify privileges on mailbox.)</p>
                                     <p>Limited Use: This access is used only for sending emails as directly initiated by you through the Add-on's features. We do not read your other emails or use this access for any other purpose.</p>
 
                                     <p><strong>Google Apps Script UI (User Interface):</strong></p>
-                                    <p>Purpose: This scope allows the Add-on to display user interface elements, such as sidebars, dialogs, and menus, within the Google Workspace application (e.g., Google Forms, Google Sheets). It does not involve direct access to your data but is necessary for the Add-on's interactive components to function.</p>
+                                    <p>Purpose: This scope allows the Add-on to display user interface elements, such as sidebars, dialogs, and menus, within the Google Workspace application (e.g., Google Forms). It does not involve direct access to your data but is necessary for the Add-on's interactive components to function.</p>
                                     <p>Specific Scope: https://www.googleapis.com/auth/script.container.ui (Display and run third-party web content in prompts and sidebars inside Google applications).</p>
 
                                     <p><strong>Information collected automatically (non-personal):</strong></p>
@@ -215,9 +202,9 @@
                                 <div class="section-content">
                                     <p>We use the collected information solely for the following purposes:</p>
                                     <ul>
-                                        <li><strong>To provide and maintain the Add-on's functionality:</strong> This includes enabling the core features of pre-filling forms, generating links, and interacting with your Google Sheets and Forms as configured.</li>
+                                        <li><strong>To provide and maintain the Add-on's functionality:</strong> This includes enabling the core features of pre-filling forms, generating links, and interacting with your CSV and Google Forms as configured.</li>
                                         <li><strong>To improve and develop the Add-on:</strong> We use usage data and error logs to understand how the Add-on is performing, identify areas for improvement, and develop new features.</li>
-                                        <li><strong>To provide customer support:</strong> If you contact us for support, we may use your email address to communicate with you and, with your explicit consent, may ask for access to specific data (e.g., a problematic spreadsheet or form ID) to troubleshoot issues.</li>
+                                        <li><strong>To provide customer support:</strong> If you contact us for support, we may use your email address to communicate with you and, with your explicit consent, may ask for access to specific data (e.g., a problematic CSV or form ID) to troubleshoot issues.</li>
                                         <li><strong>To comply with legal obligations:</strong> We may use or disclose your information if required by law or in response to valid legal requests (e.g., court orders, subpoenas).</li>
                                     </ul>
                                     <p>We will never use your data for advertising, marketing, or any purpose unrelated to the core functionality of the Add-on.</p>
@@ -230,7 +217,7 @@
                                     <p>We do not sell, rent, or trade your personal information with third parties. We may share your information only in the following limited circumstances:</p>
                                     <ul>
                                         <li><strong>With your explicit consent:</strong> We will only share your personal data with other third parties if you provide us with explicit consent to do so for a specific purpose.</li>
-                                        <li><strong>With Google:</strong> As a Google Workspace Add-on, the Add-on operates within Google's infrastructure. All data accessed or processed by the Add-on remains within your Google account or on Google's secure servers (e.g., Google Sheets, Google Forms, Google Cloud Logging). We do not store your data on our own external servers.</li>
+                                        <li><strong>With Google:</strong> As a Google Workspace Add-on, the Add-on operates within Google's infrastructure. All data accessed or processed by the Add-on remains within your Google account or on Google's secure servers (e.g. Google Forms, Google Cloud Logging). We do not store your data on our own external servers.</li>
                                         <li><strong>For legal reasons:</strong> We may disclose your information if required to do so by law or in the good faith belief that such action is necessary to comply with legal obligations, protect our rights or property, or ensure the safety of our users or the public.</li>
                                         <li><strong>In case of business transfer:</strong> If we are involved in a merger, acquisition, or asset sale, your information may be transferred as part of that transaction. We will notify you before your personal information is transferred and becomes subject to a different privacy policy.</li>
                                     </ul>
@@ -240,7 +227,7 @@
                             <li>
                                 <h3>Data Retention</h3>
                                 <div class="section-content">
-                                    <p>We do not store your Google Forms or Google Sheets content on our servers. All data processed by the Add-on is handled directly within your Google Workspace environment.</p>
+                                    <p>We do not store your Google Forms or CSV content on our servers. All data processed by the Add-on is handled directly within your Google Workspace environment.</p>
                                     <p><strong>Configuration Data:</strong> Any settings or configurations you save within the Add-on (e.g., mapping rules, specific sheet IDs) are stored securely within your Google Workspace environment, typically in the Add-on's "User Properties" or "Script Properties," which reside on Google's servers. This data persists as long as you have the Add-on installed and configured.</p>
                                     <p><strong>Usage and Error Logs:</strong> Anonymized usage data and error logs are retained in Google Cloud Logging for a limited period (as per Google Cloud Logging's default retention policies, typically 30 days, or as configured for our project) to help us monitor and improve the Add-on.</p>
                                 </div>
@@ -260,7 +247,7 @@
                                     <p>You have control over your data and the permissions you grant:</p>
                                     <ul>
                                         <li><strong>Review and Revoke Permissions:</strong> You can review and revoke the permissions granted to the Add-on at any time through your Google Account security settings: <a href="https://myaccount.google.com/security" target="_blank">https://myaccount.google.com/security</a> (look for "Third-party apps with account access"). Revoking permissions may limit or disable the Add-on's functionality.</li>
-                                        <li><strong>Uninstall the Add-on:</strong> You can uninstall the Add-on from your Google Workspace application (e.g., Google Forms, Google Sheets) at any time. This will stop the Add-on from accessing your data.</li>
+                                        <li><strong>Uninstall the Add-on:</strong> You can uninstall the Add-on from your Google Workspace application (e.g., Google Forms) at any time. This will stop the Add-on from accessing your data.</li>
                                         <li><strong>Access, Correction, Deletion:</strong> For any personal data we might indirectly collect (like your email address for support communication), you have the right to request access, correction, or deletion. Please contact us using the details below.</li>
                                     </ul>
                                 </div>
@@ -300,7 +287,7 @@
                                         <li>We will not transfer Gmail data to others unless necessary to provide or improve user-facing features, comply with applicable laws, or as part of a merger, acquisition, or sale of assets.</li>
                                         <li>We will not use Gmail data for serving advertisements.</li>
                                         <li>We will not allow humans to read Gmail data unless we have your explicit consent for specific messages (e.g., for support troubleshooting), it's necessary for security purposes, or to comply with applicable laws.</li>
-                                        <li>All data processed from Google Sheets and Forms will be used solely for the functionality of the Add-on as described above and will not be used for advertising or unrelated purposes.</li>
+                                        <li>All data processed from CSV and Forms will be used solely for the functionality of the Add-on as described above and will not be used for advertising or unrelated purposes.</li>
                                     </ul>
                                 </div>
                             </li>
