@@ -159,7 +159,7 @@
                 <div id="privacy" class="tab-content active">
                                         <div id="privacy-policy" class="privacy-policy">
                         <h2>Privacy Policy for Form Prefiller</h2>
-                        <p><strong>Last Updated:</strong> July 30, 2025</p>
+                        <p><strong>Last Updated:</strong> Oct 16, 2025</p>
                         
                         <p>This Privacy Policy describes how Bright Construct ("we," "us," or "our") collects, uses, and shares information when you use our Google Workspace Add-on, Form Prefiller (the "Add-on"), which is designed to pre-fill Google Forms.</p>
 
@@ -191,9 +191,15 @@
                                     <p>Purpose: This scope allows the Add-on to display user interface elements, such as sidebars, dialogs, and menus, within the Google Workspace application (e.g., Google Forms). It does not involve direct access to your data but is necessary for the Add-on's interactive components to function.</p>
                                     <p>Specific Scope: https://www.googleapis.com/auth/script.container.ui (Display and run third-party web content in prompts and sidebars inside Google applications).</p>
 
+                                    <p><strong>External Request (Welcome Email Communication):</strong></p>
+                                    <p>Purpose: This scope allows the Add-on to make a secure, one-time HTTPS request to a verified backend service hosted on Google Apps Script. It is used solely to send a one-time welcome email from our official support address (info.brightconstruct@gmail.com) when a user first opens the Add-on.</p>
+                                    <p>Specific Scope: https://www.googleapis.com/auth/script.external_request</p>
+                                    <p>Limited Use: Only non-sensitive information is transmitted — the user’s name, email address, and the welcome email body. No Google Form, spreadsheet, or other data is included. The request is sent securely over HTTPS, and the endpoint is domain-restricted for safety.</p>
+
                                     <p><strong>Information collected automatically (non-personal):</strong></p>
                                     <p><strong>Usage Data:</strong> We may collect anonymized and aggregated data about how the Add-on is used (e.g., features accessed, number of pre-fills generated, errors encountered). This data helps us understand usage patterns, diagnose issues, and improve the Add-on's functionality. This data is not linked to your personal identity.</p>
                                     <p><strong>Error Logs:</strong> In the event of an error, the Add-on may log technical information (e.g., stack traces, function names) to help us identify and fix bugs. These logs are primarily stored in Google's Cloud Logging infrastructure and do not contain personal user data unless explicitly provided by the user for support purposes.</p>
+
                                 </div>
                             </li>
 
