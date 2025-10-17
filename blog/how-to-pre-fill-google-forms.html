@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn how to automatically pre-fill Google Forms using spreadsheets or the Form Prefiller add-on. Save time, reduce errors, and generate personalized links in one click." />
+  <title>How to Automatically Pre-Fill Google Forms from a Spreadsheet</title>
+  <style>
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      color: #222;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1, h2, h3 {
+      color: #202124;
+    }
+    h1 { font-size: 2rem; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4rem; margin-top: 1.8em; }
+    p, li { font-size: 1.05rem; }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .cta {
+      display: inline-block;
+      background-color: #1a73e8;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 500;
+      margin: 16px 0;
+    }
+    code {
+      background: #f6f8fa;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    pre {
+      background: #f6f8fa;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>How to Automatically Pre-Fill Google Forms for Multiple People (Without Copy-Pasting URLs)</h1>
+
+  <p>Have you ever needed to pre-fill a Google Form for dozens of students, clients, or employees? Google Forms includes a “Get pre-filled link” option — but it only works for <strong>one set of answers at a time</strong>. For every new person, you have to manually create another link. That’s tedious and time-consuming. 😩</p>
+
+  <p>This guide shows you how to automate the process using either spreadsheet formulas or the <strong><a href="https://workspace.google.com/marketplace/app/form_prefiller/194411836266" target="_blank">Form Prefiller add-on</a></strong>.</p>
+
+  <h2>💡 What Does “Pre-Filled” Mean in Google Forms?</h2>
+  <p>A pre-filled Google Form link automatically fills certain fields before a user opens it. For example:</p>
+
+  <pre>https://docs.google.com/forms/d/e/abc123/viewform?entry.123456=John&entry.7891011=001</pre>
+
+  <p>When someone opens that URL, the form is already filled with <em>John</em> and <em>001</em>. This is perfect for:</p>
+  <ul>
+    <li>Teachers creating individual student forms</li>
+    <li>Businesses sending personalized feedback links</li>
+    <li>Schools collecting parent consent forms</li>
+    <li>HR or admin teams reusing one form for many people</li>
+  </ul>
+
+  <h2>🧩 Option 1: Manual or Spreadsheet Formula Method</h2>
+  <p>If you’re comfortable editing URLs, you can replace field values dynamically in Google Sheets. Here’s an example formula:</p>
+
+  <pre>= "https://docs.google.com/forms/d/e/.../viewform?entry.123456=" & A2 & "&entry.7891011=" & B2</pre>
+
+  <p>This method works for small batches but has drawbacks:</p>
+  <ul>
+    <li>Breaks easily if you change question order or form structure</li>
+    <li>Requires editing long URLs manually</li>
+    <li>Not beginner-friendly for non-technical users</li>
+  </ul>
+
+  <p>For anyone managing 30+ form recipients, there’s an easier, no-code solution.</p>
+
+  <h2>⚙️ Option 2: Automate Everything with <a href="https://workspace.google.com/marketplace/app/form_prefiller/194411836266" target="_blank">Form Prefiller</a></h2>
+  <p><strong>Form Prefiller</strong> is a free Google Forms add-on that automatically generates unique pre-filled links for every row in your spreadsheet — without touching a single formula.</p>
+
+  <p><strong>Here’s how it works:</strong></p>
+  <ol>
+    <li>Open your Google Form.</li>
+    <li>Go to <em>Extensions → Form Prefiller → Open Form Prefiller</em>.</li>
+    <li>Upload a spreadsheet (CSV or Excel).</li>
+    <li>Match your columns to Form fields.</li>
+    <li>Click <strong>Generate Links</strong> to create pre-filled URLs instantly.</li>
+    <li>(Optional) Send those links directly via email in one click.</li>
+  </ol>
+
+  <a class="cta" href="https://workspace.google.com/marketplace/app/form_prefiller/194411836266" target="_blank">Install Form Prefiller →</a>
+
+  <h2>🎥 Watch a Quick Demo</h2>
+  <p>See how it works in under a minute:</p>
+  <p><a href="https://www.youtube.com/watch?v=ciI15dCymhM" target="_blank">▶ Watch Form Prefiller Demo</a></p>
+
+  <h2>🧠 When to Use It</h2>
+  <ul>
+    <li>Automating classroom feedback forms</li>
+    <li>Generating parent communication links</li>
+    <li>Sending custom survey URLs to customers</li>
+    <li>Reusing one Google Form for multiple respondents efficiently</li>
+  </ul>
+
+  <h2>💬 Feedback Welcome</h2>
+  <p>If you try it, we’d love your thoughts. Feedback helps improve the add-on for everyone.</p>
+  <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScR5RNY2BH5oWDLDrf2BQ-KiJnK8EHCfHJf9y6pzCIEJt_6hw/viewform" target="_blank">📝 Share Feedback</a></p>
+
+  <h2>📈 In Short</h2>
+  <p>The built-in “Get pre-filled link” feature in Google Forms is great for one-off use — but not when you have dozens or hundreds of entries. Form Prefiller automates this process, letting you generate and send all your personalized links in one go.</p>
+
+  <p><a class="cta" href="https://workspace.google.com/marketplace/app/form_prefiller/194411836266" target="_blank">Try Form Prefiller for Free</a></p>
+
+</body>
+</html>
