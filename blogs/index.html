@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Bright Construct</title>
+  <style>
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      color: #222;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #fafafa;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      color: #202124;
+      margin-bottom: 10px;
+    }
+    
+    .subtitle {
+      color: #5f6368;
+      font-size: 1.1rem;
+    }
+    
+    .blog-grid {
+      display: grid;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .blog-card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+    
+    .blog-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+    
+    .blog-card h2 a {
+      color: #202124;
+      text-decoration: none;
+    }
+    
+    .blog-card h2 a:hover {
+      color: #1a73e8;
+    }
+    
+    .blog-meta {
+      color: #5f6368;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+    
+    .blog-excerpt {
+      color: #3c4043;
+      margin-bottom: 15px;
+    }
+    
+    .read-more {
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <a href="../" class="back-link">← Back to Home</a>
+  
+  <header>
+    <h1>Blog</h1>
+    <p class="subtitle">Insights, tutorials, and updates</p>
+  </header>
+
+  <div class="blog-grid">
+    <article class="blog-card">
+      <h2><a href="how-to-prefill-google-forms.html">How to Automatically Pre-Fill Google Forms</a></h2>
+      <div class="blog-meta">October 17, 2025</div>
+      <p class="blog-excerpt">
+        Learn how to automatically pre-fill Google Forms for multiple people using spreadsheets or the Form Prefiller add-on. 
+        Save time, reduce errors, and generate personalized links in one click.
+      </p>
+      <a href="how-to-prefill-google-forms.html" class="read-more">Read more →</a>
+    </article>
+    
+    <!-- Add more blog cards here as you create new posts -->
+  </div>
+</body>
+</html>
