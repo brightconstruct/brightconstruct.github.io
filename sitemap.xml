@@ -60,16 +60,23 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
+
   <url>
-    <loc>https://brightconstruct.co/blogs/lessons-from-building-my-first-google-forms-addon.html</loc>
+    <loc>https://brightconstruct.co/blogs/google-workspace-addon-verification-process</loc>
     <lastmod>2025-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://brightconstruct.co/blogs/how-to-prefill-google-forms.html</loc>
+    <loc>https://brightconstruct.co/blogs/lessons-from-building-my-first-google-forms-addon</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightconstruct.co/blogs/how-to-prefill-google-forms</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
