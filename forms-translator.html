@@ -170,7 +170,7 @@
                 <div class="video-section">
                     <h2>See Forms Translator in Action</h2>
                     <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Forms Translator Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gdcvwtDLLbA" title="Forms Translator Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <p class="video-caption">Watch our quick tutorial on using Forms Translator with Google Forms</p>
                 </div>
@@ -192,7 +192,7 @@
                 <div id="privacy" class="tab-content active">
                     <div id="privacy-policy" class="privacy-policy">
                         <h2>Privacy Policy for Forms Translator – Unified Responses</h2>
-                        <p><strong>Last Updated:</strong> January 2026</p>
+                        <p><strong>Last Updated:</strong> February 2026</p>
                         
                         <p>This Privacy Policy describes how Bright Construct ("we," "us," or "our") collects, uses, and shares information when you use our Google Workspace Add-on, Forms Translator – Unified Responses (the "Add-on"), which is designed to translate Google Forms into multiple languages and unify responses from all translated forms into a single spreadsheet.</p>
 
@@ -217,29 +217,28 @@
                                     
                                     <p><strong>Specific Scopes:</strong></p>
                                     <ul>
-                                        <li><code>https://www.googleapis.com/auth/forms.currentonly</code> (Access the currently open form)</li>
                                         <li><code>https://www.googleapis.com/auth/forms</code> (Create and update translated forms created by the Add-on)</li>
                                     </ul>
                                     
                                     <p><strong>Limited Use:</strong><br>
                                     The Add-on only accesses forms that you explicitly open, translate, or generate through the Add-on. It does not scan or access unrelated forms in your Google Drive.</p>
                                     
-                                    <p><strong>Google Sheets (Read & Edit Access)</strong></p>
+                                    <p><strong>Google Drive (Files Created by the Add-on)</strong></p>
                                     <p><strong>Purpose:</strong><br>
-                                    The Add-on requires access to Google Sheets in order to:</p>
+                                    The add-on uses Google Drive access to create and manage a response spreadsheet for your form. This spreadsheet is used to:</p>
                                     <ul>
-                                        <li>Read responses from translated forms</li>
+                                        <li>Store responses from translated forms</li>
                                         <li>Store internal language mappings and configuration metadata</li>
-                                        <li>Generate unified response views (e.g., Unified Responses and Unified Form View)</li>
+                                        <li>Generate unified response views (e.g., Unified Responses and Unified Form View</li>
                                     </ul>
                                     
                                     <p><strong>Specific Scope:</strong></p>
                                     <ul>
-                                        <li><code>https://www.googleapis.com/auth/spreadsheets</code></li>
+                                        <li><code>https://www.googleapis.com/auth/drive.file</code></li>
                                     </ul>
                                     
                                     <p><strong>Limited Use:</strong><br>
-                                    Only the response spreadsheet linked to your form is accessed. No other spreadsheets in your Google Drive are read or modified.</p>
+                                    The add-on can only access files that it creates or that you explicitly link to the form for responses. It does not have access to view, read, or modify other files in your Google Drive.
                                     
                                     <p><strong>Google Apps Script UI (User Interface)</strong></p>
                                     <p><strong>Purpose:</strong><br>
