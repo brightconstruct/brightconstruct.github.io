@@ -225,7 +225,11 @@
                                     <p>Specific Scope: https://www.googleapis.com/auth/forms.currentonly (See, edit, create, and delete only the specific Google Form you are using with this app).</p>
                                     <p>Limited Use: Our access is strictly limited to the Google Form that is currently open and being used with the Add-on. We do not access or process any other forms in your Google Drive.</p>
 
-                                
+                                    <p><strong>Google Drive (Limited File Access):</strong></p>
+                                    <p>Purpose: This permission allows the add-on to create and manage a Google Sheets file connected to the active Google Form. This sheet is used to store and generate pre-filled links when you choose the Google Sheets workflow.</p>
+                                    <p>Specific Scope: https://www.googleapis.com/auth/drive.file </p>
+                                    <p>Limited Use: The add-on can only access files it creates or that you explicitly open with the add-on. It does not access, browse, or read unrelated files in your Google Drive, also no Drive files are accessed without user action.</p>
+
                                     <p><strong>Gmail (Send Emails):</strong></p>
                                     <p>Purpose: If the Add-on includes a feature to send pre-filled form links via email (e.g., to respondents), it will require permission to manage drafts and send emails on your behalf. Your email address (obtained via userinfo.email scope) will be used as the "from" address for these emails.</p>
                                     <p>Specific Scopes: https://www.googleapis.com/auth/gmail.send (Send messages only. No read or modify privileges on mailbox.)</p>
