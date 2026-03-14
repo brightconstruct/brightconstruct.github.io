@@ -64,13 +64,12 @@
                         <strong>one unified spreadsheet</strong>. Auto-sync updates across all translations.
                     </p>
                     <div class="addon-meta large">
-                        <span>🔜 Coming Soon</span>
                         <span>🌍 Multi-Language Support</span>
                         <span>📊 Unified Responses</span>
                         <span>🔄 Auto-Sync Updates</span>
                     </div>
                     <div class="addon-actions">
-                        <a href="https://workspace.google.com/marketplace" class="btn-primary large">Install</a>
+                        <a href="https://workspace.google.com/marketplace/app/forms_translator_%E2%80%93_unified_responses_for/157749432468?flow_type=2" class="btn-primary large">Install</a>
                     </div>
                 </div>
             </div>
@@ -250,6 +249,22 @@
                                     </ul>
                                     
                                     <p>This scope does not provide access to your data.</p>
+
+                                    <p><strong>External Translation Service (HTTPS Requests)</strong></p>
+                                    <p><strong>Purpose:</strong><br>
+                                    The Add-on may send limited text content to an external language-processing service over secure HTTPS connections in order to improve translation quality for certain edge cases during form translation.</p>
+
+                                    <p>This is used only when the Add-on detects ambiguous or duplicate translated answer choices that could cause errors or confusion in the translated form. In these situations, the service is used to generate context-aware translations that preserve the original meaning of the form options and ensure that all answer choices remain distinct.</p>
+
+                                    <p><strong>Specific Scope:</strong></p>
+                                    <ul>
+                                        <li><code>https://www.googleapis.com/auth/script.external_request</code></li>
+                                    </ul>
+
+                                    <p><strong>Limited Use:</strong><br>
+                                    External requests are made only during user-initiated translation actions within the Add-on. The data sent is limited to the minimal text necessary to perform the translation (such as form questions or answer option labels). The Add-on does not send form responses, respondent data, or personal user information to external services.</p>
+
+                                    <p>The Add-on does not store this data outside of Google's infrastructure and does not use it for analytics, advertising, or profiling.</p>
                                     
                                     <h4>Information Collected Automatically (Non-Personal)</h4>
                                     
