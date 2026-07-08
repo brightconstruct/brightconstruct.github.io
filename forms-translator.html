@@ -26,7 +26,26 @@
       "applicationCategory": "UtilitiesApplication",
       "description": "Translate Google Forms into multiple languages and unify all responses in one spreadsheet.",
       "softwareVersion": "1.0.0",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "offers": [
+        {
+            "@type": "Offer",
+            "name": "Free",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        {
+            "@type": "Offer",
+            "name": "Pro",
+            "price": "9.99",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "9.99",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M"
+            }
+        }
+      ],
       "url": "https://brightconstruct.co/forms-translator",
       "image": "https://brightconstruct.co/images/forms-translator/og.png",
       "applicationSubCategory": "Google Forms add-on"
@@ -45,6 +64,9 @@
             <nav>
                 <ul>
                     <li><a href="/">Add-ons Home</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#privacy-policy">Privacy</a></li>
+                    <li><a href="#terms-conditions">Terms</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -70,6 +92,7 @@
                     </div>
                     <div class="addon-actions">
                         <a href="https://workspace.google.com/marketplace/app/forms_translator_%E2%80%93_unified_responses_for/157749432468?flow_type=2" class="btn-primary large">Install</a>
+                        <a href="#pricing" class="btn-secondary large">View Pricing</a>
                     </div>
                 </div>
             </div>
@@ -177,6 +200,56 @@
         </div>
     </section>
 
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2>Pricing</h2>
+            <p class="pricing-intro">
+                Forms Translator – Unified Responses includes a free tier with limited monthly usage.
+                Pro unlocks expanded monthly usage for translating Google Forms and generating Unified Responses.
+            </p>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Free</h3>
+                    <p class="price">$0</p>
+                    <p class="price-subtitle">Limited monthly usage</p>
+                    <ul>
+                        <li>Try Google Form translation</li>
+                        <li>Try Unified Responses</li>
+                        <li>Good for light or occasional use</li>
+                    </ul>
+                    <a href="https://workspace.google.com/marketplace/app/forms_translator_%E2%80%93_unified_responses_for/157749432468?flow_type=2" class="btn-secondary">Install Free</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>Pro</h3>
+                    <p class="price">$9.99 USD<span>/month</span></p>
+                    <p class="price-subtitle">Billed monthly. Cancel anytime.</p>
+                    <ul>
+                        <li>Expanded monthly usage</li>
+                        <li>Create translated Google Form copies</li>
+                        <li>Translate existing Google Forms</li>
+                        <li>Generate Unified Responses for multilingual submissions</li>
+                        <li>Manage billing through Stripe</li>
+                    </ul>
+                    <a href="https://workspace.google.com/marketplace/app/forms_translator_%E2%80%93_unified_responses_for/157749432468?flow_type=2" class="btn-primary">Install and Upgrade</a>
+                </div>
+            </div>
+
+            <div class="team-pricing-note">
+                <h3>Schools, nonprofits, and teams</h3>
+                <p>
+                    Need higher limits, multiple users, or organization-wide support?
+                    Contact us at <a href="mailto:info@brightconstruct.co">info@brightconstruct.co</a>.
+                </p>
+            </div>
+
+            <p class="pricing-disclaimer">
+                Prices are listed in USD. Taxes may apply where required. Payment processing is handled securely by Stripe.
+            </p>
+        </div>
+    </section>
+
     <section class="policies-section">
         <div class="container">
             <h2>Policies and Terms</h2>
@@ -191,7 +264,7 @@
                 <div id="privacy" class="tab-content active">
                     <div id="privacy-policy" class="privacy-policy">
                         <h2>Privacy Policy for Forms Translator – Unified Responses</h2>
-                        <p><strong>Last Updated:</strong> February 2026</p>
+                        <p><strong>Last Updated:</strong> July 2026</p>
                         
                         <p>This Privacy Policy describes how Bright Construct ("we," "us," or "our") collects, uses, and shares information when you use our Google Workspace Add-on, Forms Translator – Unified Responses (the "Add-on"), which is designed to translate Google Forms into multiple languages and unify responses from all translated forms into a single spreadsheet.</p>
 
@@ -228,7 +301,7 @@
                                     <ul>
                                         <li>Store responses from translated forms</li>
                                         <li>Store internal language mappings and configuration metadata</li>
-                                        <li>Generate unified response views (e.g., Unified Responses and Unified Form View</li>
+                                        <li>Generate unified response views, such as Unified Responses and Unified Form View</li>
                                     </ul>
                                     
                                     <p><strong>Specific Scope:</strong></p>
@@ -237,7 +310,7 @@
                                     </ul>
                                     
                                     <p><strong>Limited Use:</strong><br>
-                                    The add-on can only access files that it creates or that you explicitly link to the form for responses. It does not have access to view, read, or modify other files in your Google Drive.
+                                    The add-on can only access files that it creates or that you explicitly link to the form for responses. It does not have access to view, read, or modify other files in your Google Drive.</p>
                                     
                                     <p><strong>Google Apps Script UI (User Interface)</strong></p>
                                     <p><strong>Purpose:</strong><br>
@@ -273,6 +346,21 @@
                                     
                                     <p><strong>Error Logs</strong></p>
                                     <p>In the event of an error, the Add-on may log technical information (e.g., stack traces, function names) to help us identify and fix bugs. These logs are stored within Google's Cloud Logging infrastructure and do not intentionally contain personal user data.</p>
+
+                                    <h4>Account, Usage, and Billing Information</h4>
+                                    <p>
+                                        When you use the Add-on, we may process your email address, usage status, subscription status,
+                                        and billing-related identifiers in order to provide free and paid plan access.
+                                    </p>
+                                    <p>
+                                        Payments are processed securely by Stripe. We do not store your full credit card number or payment card details.
+                                        Stripe may process payment information, billing email, subscription status, invoices, and related transaction data
+                                        according to Stripe's own privacy practices.
+                                    </p>
+                                    <p>
+                                        We use this information only to authenticate users, manage plan access, enforce usage limits,
+                                        provide customer support, and maintain billing records.
+                                    </p>
                                 </div>
                             </li>
                             
@@ -295,9 +383,13 @@
                                 <div class="section-content">
                                     <p>We do not sell, rent, or trade your personal information with third parties. We may share information only in the following limited circumstances:</p>
                                     <ul>
-                                        <li><strong>With Google:</strong> As a Google Workspace Add-on, all data accessed or processed by the Add-on remains within your Google account and Google's secure infrastructure (Google Forms, Google Sheets, Google Cloud Logging). We do not store your data on external servers.</li>
+                                        <li><strong>With Google:</strong> As a Google Workspace Add-on, form content, form responses, and linked spreadsheet data remain within your Google account and Google's secure infrastructure. We do not store copies of your Google Forms or form responses on our own servers.</li>
                                         <li><strong>For legal reasons:</strong> We may disclose information if required by law or in good faith belief that such action is necessary to comply with legal obligations, protect our rights, or ensure user safety.</li>
                                         <li><strong>In case of business transfer:</strong> If Bright Construct is involved in a merger, acquisition, or asset sale, information may be transferred as part of that transaction. Users will be notified if a new privacy policy applies.</li>
+                                        <li>
+                                            <strong>With Stripe:</strong> If you purchase a paid subscription, billing and payment processing are handled by Stripe.
+                                            We share only the information needed to create and manage your subscription, such as your email address and subscription identifiers.
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -312,6 +404,12 @@
                                     
                                     <p><strong>Usage and Error Logs</strong></p>
                                     <p>Anonymized usage data and error logs are retained in Google Cloud Logging for a limited period (typically up to 30 days, based on Google Cloud defaults) for monitoring and improvement purposes.</p>
+
+                                    <p><strong>Account, Usage, and Billing Records</strong></p>
+                                    <p>
+                                        We may retain account, usage, subscription, and billing-related records for as long as needed to provide the Add-on,
+                                        manage subscriptions, prevent abuse, provide support, and comply with legal or accounting obligations.
+                                    </p>
                                 </div>
                             </li>
                             
@@ -354,7 +452,7 @@
                                 <div class="section-content">
                                     <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:</p>
                                     <p>
-                                        Email: <a href="mailto:info.brightconstruct@gmail.com">info.brightconstruct@gmail.com</a><br>
+                                        Email: <a href="mailto:info@brightconstruct.co">info@brightconstruct.co</a><br>
                                         Organization: Bright Construct
                                     </p>
                                 </div>
@@ -381,13 +479,39 @@
                     <div id="terms-conditions" class="privacy-policy">
                         <h2>Terms and Conditions for Forms Translator – Unified Responses</h2>
                         
-                        <p>By using the free Forms Translator – Unified Responses Add-on, you agree to these terms.</p>
+                        <p>
+                            By using Forms Translator – Unified Responses, including the free tier or any paid Pro subscription,
+                            you agree to these terms.
+                        </p>
                         
                         <ol>
                             <li>
                                 <h3>"AS IS" - No Guarantees</h3>
                                 <div class="section-content">
-                                    <p>Forms Translator is provided for free and "as is," without any warranties. Use it at your own risk. We do not guarantee the accuracy of translations or compatibility with all form types.</p>
+                                    <p>Forms Translator – Unified Responses, including both free and paid functionality, is provided "as is," without any warranties. Use it at your own risk. We do not guarantee the accuracy of translations or compatibility with all form types.</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <h3>Paid Plans, Billing, and Cancellation</h3>
+                                <div class="section-content">
+                                    <p>
+                                        Forms Translator – Unified Responses offers a free tier with limited monthly usage and a paid Pro plan
+                                        with higher monthly usage and access to premium functionality.
+                                    </p>
+                                    <p>
+                                        Paid subscriptions are billed monthly in USD and are processed securely through Stripe.
+                                        Bright Construct does not store your credit card details.
+                                    </p>
+                                    <p>
+                                        You may cancel your subscription at any time through the billing portal. Unless otherwise stated,
+                                        cancellation takes effect at the end of the current billing period. After cancellation, your account
+                                        will return to the free tier.
+                                    </p>
+                                    <p>
+                                        Subscription fees are generally non-refundable except where required by law. If you believe there has
+                                        been a billing error, contact us at <a href="mailto:info@brightconstruct.co">info@brightconstruct.co</a>.
+                                    </p>
                                 </div>
                             </li>
                             
@@ -454,13 +578,13 @@
                                     
                                     <p>
                                         Bright Construct<br>
-                                        <a href="mailto:info.brightconstruct@gmail.com">info.brightconstruct@gmail.com</a><br>
+                                        <a href="mailto:info@brightconstruct.co">info@brightconstruct.co</a><br>
                                     </p>
                                 </div>
                             </li>
                         </ol>
                         
-                        <p><strong>Last Updated:</strong> January 2026</p>
+                        <p><strong>Last Updated:</strong> July 2026</p>
                         
                         <p>By using Forms Translator – Unified Responses, you signify your acceptance of these terms.</p>
                     </div>
@@ -474,7 +598,7 @@
             <h2>Questions or Feedback?</h2>
             <p>We are always looking to improve Forms Translator. If you have suggestions or encounter any issues, please reach out!</p>
             <div class="contact-links">
-                <a href="mailto:info.brightconstruct@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+                <a href="mailto:info@brightconstruct.co" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
             </div>
         </div>
     </section>
